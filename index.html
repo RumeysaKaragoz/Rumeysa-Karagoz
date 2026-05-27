@@ -1,37 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rümeysa Karagöz</title>
-  </head>
-  <body>
-
-    <h1>
-      Rümeysa Karagöz'ün 
-      Web Sayfalarına Hoş Geldiniz
-    </h1>
-    <a href="index.html">Anasayfa</a>
-    <a href="route.html">Rotalar</a>
-    <a href="guide.html">Gezi Rehberi</a>
-<hr>
-   <a href="https://maps.app.goo.gl/JKMBrYEQfU3jm1aY7" target="_blank"> 
-    <img src="image/duzcemerkez.jpeg"  width="400 px" height="500px">
-   </a>
-   
-<img src="image/turkiyemap.png" usemap="#gezi-haritasi" alt="Türkiye Gezi Rotaları" >
-
-<map name="gezi-haritasi">
-    <area shape="circle" coords="260,172,49" alt="İstanbul" href="route.html#istanbul" title="İstanbul">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitig | Anasayfa </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <a href="index.html"><h2>Bitig</h2></a>
+        </div>
+     <nav class="linkler">
+            <a href="index.html" id="link">Anasayfa</a>
+            <a href="list.html" id="link">Kitaplar</a>
+            <a href="communication.html" id="link">İletişim</a>
+        </nav>
+      <nav class="linkler">
+         <a href="cart.html" id="link">Sepetim</a>
+      </nav>
+    </header>
+    <div class="ana">
+     <div class="icerik">
+        <h1>Bitig.com</h1>
+        <p>Kitapla buluşmanın en kolay yolu</p>
+     </div>
+     <div class="arama">
+        <input type="text" id="arama" placeholder="Kitap, yazar veya yayınevi ara...">
+        <button type="button">Ara</button>
+     </div>
+    </div>
     
-    <area shape="circle" coords="354,230,35" alt="Sakarya" href="route.html#sakarya" title="Sakarya">
-    
-    <area shape="circle" coords="424,243,34" alt="Düzce" href="route.html#duzce" title="Düzce">
-    
-    <area shape="circle" coords="484,218,28" alt="Bolu" href="route.html#bolu" title="Bolu">
-</map>
-   <br>
-   <a href="mailto:rmeysakaragz0@gmail.com">Rümeysa Karagöz'e Mail Gönder</a>
-  </body>
+    <div class="kitaplar">
+        <h2>Öne Çıkan Kitaplar</h2>
+        <div class="kitap-listesi">
+            <div class="kitap-kart">
+                <img src="img/kitap1.jpg" alt="Kitap Adı">
+                <h3>Çalıkuşu</h3>
+                <p>Reşat Nuri Güntekin</p>
+                <span class="fiyat">120 TL</span>
+                <a href="information.html?title=Çalıkuşu&author=Reşat Nuri Güntekin&price=120 TL&img=img/kitap1.jpg&desc=Reşat Nuri Güntekin'in ölümsüz eseri Çalıkuşu, idealist bir öğretmen olan Feride'nin Anadolu'da yaşadığı zorlukları, aşkı ve fedakarlığı konu alır." class="detay-buton">İncele</a>            
+            </div>
+          <div class="kitap-kart">
+                <img src="img/kitap15.jpg" alt="Kitap Adı">
+                <h3>Yabancı</h3>
+                <p>Albert Camus</p>
+                <span class="fiyat">118 TL</span>
+<a href="information.html?title=Yabancı&author=Albert Camus&price=118 TL&img=img/kitap15.jpg&desc=Hayatın absürtlüğünü ve anlamsızlığını, annesinin ölümüne bile toplumsal beklentilerin gerektirdiği gibi ağlamayan Meursault karakteri üzerinden anlatan, varoluşçuluğun temel taşlarından biri." class="detay-buton">İncele</a>
+            </div>
+            <div class="kitap-kart">
+                <img src="img/kitap16.jpg" alt="Kitap Adı">
+                <h3>Kırmızı Pazartesi</h3>
+                <p>Gabriel Garcia Marquez</p>
+                <span class="fiyat">178 TL</span>
+<a href="information.html?title=Kırmızı Pazartesi&author=Gabriel Garcia Marquez&price=178 TL&img=img/kitap16.jpg&desc=İşleneceğini herkesin bildiği ama kimsenin engel olmadığı bir namus cinayetinin anatomisi. Kolektif suçluluk psikolojisini büyüleyici bir kurguyla ele alan muazzam bir novella." class="detay-buton">İncele</a>            
+            </div>
+            <div class="kitap-kart">
+                <img src="img/kitap8.jpg" alt="Kitap Adı">
+                <h3>Siddhartha</h3>
+                <p>Hermenn Hesse</p>
+                <span class="fiyat">250 TL</span>
+<a href="information.html?title=Siddhartha&author=Hermenn Hesse&price=250 TL&img=img/kitap8.jpg&desc=Buddha döneminde yaşayan genç Siddhartha'nın ruhsal aydınlanmayı, dünyevi zevkleri ve kendi içindeki özü bulmak adına çıktığı mistik ve felsefi yolculuk." class="detay-buton">İncele</a>
+            </div>
+        </div>
+    </div>
+<footer>
+        <p>&copy; 2026 Bitig.com</p>
+</footer>
+</body>
 </html>
-
