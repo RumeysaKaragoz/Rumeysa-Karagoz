@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitig | İletişim</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">i
+        <script src="script.js"></script>
+
 
 </head>
 <body>
@@ -20,7 +22,72 @@
       <nav class="cart">
          <a href="cart.html">Sepetim</a>
       </nav>
+
+
     </header>
+
+    <div class="iletisim">
+        <div class="yardimHead">
+            <h1>Yardım Merkezi</h1>
+            <p>Merak ettiğiniz konuları veya alt kısımdan bize doğrudan şikayet veya önerilerinizi gönderebilirsiniz.</p>
+        </div>
+
+     <div class="kategori">
+      <div class="kateKart" onclick="kategoriSec('Sipariş İşlemleri')">
+        <h3>Sipariş İşlemleri</h3>
+        <p>Nasıl sipariş verilir? Kargo takibi nasıl yapılır?</p>
+      </div>
+      <div class="kateKart" onclick="kategoriSec('İptal ve İade')">
+        <h3>İptal & İade</h3>
+        <p>Şipariş iptali ve ürün iade süreçleri hakkında bilgi.</p>
+      </div>
+      <div class="kateKart" onclick="kategoriSec('Şikayet ve Öneri')">
+        <h3>Şikayet & Öneri</h3>
+        <p>Bize iletmek istediğiniz tüm geri bildirimler.</p>
+      </div>
+     </div>
+
+     <div class="yardimAlan">
+            <h2>Destek ve Şikayet Talebi Oluştur</h2>
+            <form id="yardimFormu">
+                <div class="formGrup">
+                    <label for="adSoyad">Adınız Soyadınız:</label>
+                    <input type="text" id="adSoyad" required placeholder="Adınızı ve soyadınızı giriniz...">
+                </div>
+
+                <div class="formGrup">
+                    <label for="eposta">E-posta Adresiniz:</label>
+                    <input type="email" id="eposta" required placeholder="E-posta adresinizi giriniz...">
+                </div>
+
+                <div class="formGrup">
+                    <label for="yardimKonusu">Yardım Almak İstediğiniz Konu:</label>
+                    <select id="yardimKonusu" required>
+                        <option value="">Lütfen bir konu seçiniz...</option>
+                        <option value="Sipariş İşlemleri">Sipariş İşlemleri</option>
+                        <option value="İptal ve İade">İptal ve İade İşlemleri</option>
+                        <option value="Şikayet ve Öneri">Şikayet ve Öneri Bildirimi</option>
+                        <option value="Diğer">Diğer Konular</option>
+                    </select>
+                </div>
+
+                <div class="formGrup">
+                    <label for="yardimMesaj">Mesajınız / Şikayet Detayınız:</label>
+                    <textarea id="yardimMesaj" rows="5" required placeholder="Lütfen detaylıca açıklayınız..."></textarea>
+                </div>
+
+                <button type="submit" class="yardimBtn">Talebi Gönder</button>
+            </form>
+
+            <div id="yardimSonucKutusu" class="yardim-sonuc-kutu" style="display: none;">
+                <h3>Destek Talebiniz Kaydedildi</h3>
+                <p id="yardimSonucMetni"></p>
+            </div>
+        </div>
+
+
+
+   </div>
     <footer>
         <p>&copy; 2026 Bitig.com</p>
 </footer>
