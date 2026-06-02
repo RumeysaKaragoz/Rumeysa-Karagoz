@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bitig | Sepet</title>
             <link rel="stylesheet" href="style.css">
-
+          <script src="script.js"></script>
+          <link rel="icon" type="image/png" href="img/logo.png">
 </head>
 <body>
         <header>
@@ -21,6 +22,32 @@
          <a href="cart.html">Sepetim</a>
       </nav>
     </header>
+
+
+   <div class="sepet">
+        <h1>Sepetim</h1>
+        <div id="sepetIcerik">
+        
+        </div>
+        
+        <div class="sepet-ozet" id="sepetOzet" >
+            <div class="kupon-uygulama-alani">
+                <input type="text" id="sepetKuponInput" placeholder="Kupon kodunuzu giriniz...">
+                <button type="button" id="sepetKuponBtn" class="kupon-btn">Uygula</button>
+            </div>
+            <p id="kuponMesaj" style="margin-top: 5px; font-size: 14px; font-weight: bold;"></p>
+
+            <h3>Toplam Tutar: <span id="sepetToplam">0 TL</span></h3>
+            <div class="sepet-butonlar">
+                <button id="sepetiTemizleBtn" class="temizleBtn">Sepeti Temizle</button>
+                <button id="satinAlBtn" class="satinAlBtn">Alışverişi Tamamla</button>
+            </div>
+        </div>
+        <div id="siparisSonucKutusu" class="yardim-sonuc-kutu">
+            <h3>Siparişiniz Başarıyla Alındı! </h3>
+            <p>Kitaplarınız en kısa sürede hazırlanıp kargoya teslim edilecektir. Bitig'i tercih ettiğiniz için teşekkür ederiz.</p>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2026 Bitig.com</p>
